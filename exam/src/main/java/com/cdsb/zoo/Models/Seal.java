@@ -9,6 +9,13 @@ public class Seal extends Animal {
         super("Foca", 80, Diet.CARNIVOROUS, 2, true, true, AnimalType.AQUATICS);
     }
 
+    @Override
+    public void makeSound() {
+        System.out.println("La foca hace: 'Ar-ar!'");
+    }
+
+    
+
 
 
 }

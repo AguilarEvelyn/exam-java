@@ -4,7 +4,7 @@ import com.cdsb.zoo.Enums.AnimalType;
 import com.cdsb.zoo.Enums.Diet;
 import com.cdsb.zoo.Interfaces.IAnimal;
 
-public class Animal  implements IAnimal{
+public abstract class Animal  implements IAnimal{
     protected String getSpeciesName; //nombre de la especie
     protected int necessarySpace;//espacio necesario en m2
     protected  Diet diet; //tipo de dieta
@@ -56,6 +56,26 @@ public class Animal  implements IAnimal{
     @Override
     public boolean canLiveInGroup() {
         return canLiveInGroup;
+
+    }
+
+    public abstract void makeSound();//  implementar para hacer un sonido específico
+
+
+     public void feed() { // Método para alimentar al animal
+        System.out.println(getSpeciesName + " ha sido alimentado.");
+
+    }
+
+    public String showCard(){
+        return "Tarjeta de información del animal: \n" +
+                "Especie: " + getSpeciesName + "\n" +
+                "Espacio necesario: " + necessarySpace + " m2\n" +
+                "Dieta: " + diet + "\n" +
+                "Frecuencia de alimentación: " + feedingFrequency + "\n" +
+                "Requiere cuidados especiales: " + specialCare + "\n" +
+                "Puede vivir en grupo: " + canLiveInGroup + "\n" +
+                "Tipo: " + Type;
 
     }
 

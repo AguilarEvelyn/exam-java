@@ -8,6 +8,12 @@ public class Parrot extends Animal{
         super("Loro", 10, Diet.OMNIVOROUS, 3, false, true, AnimalType.BIRDS);
     }
 
-   
+    @Override
+    public void makeSound() {
+        System.out.println("El loro dice: '¡Hola, Hola!'");
+    }
+
+    
+
 
 }

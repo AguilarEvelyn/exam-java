@@ -8,4 +8,11 @@ public class Lion extends Animal {
    public Lion() {
        super("Leon", 50, Diet.CARNIVOROUS, 7, true, false, AnimalType.MAMMALS);
    }
+
+   @Override
+   public void makeSound() {
+         System.out.println("El león ruge: 'Roooar!'");
+   }
+
+   
 }

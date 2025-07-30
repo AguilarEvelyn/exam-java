@@ -9,6 +9,11 @@ public class Dolphin  extends Animal {
         super("Delfin", 50, Diet.CARNIVOROUS, 3, true, true, AnimalType.AQUATICS);
     }
 
+    @Override
+    public void makeSound() { // Implementación del sonido que hace el delfín
+        System.out.println("El delfín hace: 'Ee-ee!'");
+
+    }
 
 
 }

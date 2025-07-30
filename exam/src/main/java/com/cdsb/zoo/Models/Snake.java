@@ -9,5 +9,11 @@ public class Snake extends Animal {
         super("Serpiente", 20, Diet.CARNIVOROUS, 3, true, false, AnimalType.REPTILES);
     }
 
+    @Override
+    public void makeSound() {
+        System.out.println("La serpiente hace: 'Sssss!'");
+    }
+
+  
 
 }

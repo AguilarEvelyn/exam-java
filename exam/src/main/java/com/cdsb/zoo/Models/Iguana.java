@@ -9,6 +9,11 @@ public class Iguana extends Animal {
         super("Iguana", 15, Diet.HERBIVOROUS, 2, false, true, AnimalType.REPTILES);
     }
 
+    @Override
+    public void makeSound() {
+        System.out.println("La iguana hace: 'Hisss!'");
+    }
 
+   
 
 }

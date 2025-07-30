@@ -9,4 +9,10 @@ public class Toucan extends Animal {
         super("Tucán", 6, Diet.OMNIVOROUS, 4, false, true, AnimalType.BIRDS);
     }
 
+    @Override
+    public void makeSound() {
+        System.out.println("El tucán hace: 'Caa-caa!'");
+    }
+
+   
 }

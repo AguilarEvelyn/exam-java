@@ -9,4 +9,11 @@ public class Elephant extends Animal{
         super("Elefante", 150, Diet.HERBIVOROUS, 5, false, true, AnimalType.MAMMALS);
     }
 
+    @Override
+    public void makeSound() {
+        System.out.println("El elefante hace: 'Prrrr!'");
+    }
+
+   
+
 }

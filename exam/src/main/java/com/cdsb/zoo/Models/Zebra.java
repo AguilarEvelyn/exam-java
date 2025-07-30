@@ -9,4 +9,10 @@ public class Zebra extends Animal {
         super("Cebra", 60, Diet.HERBIVOROUS, 2, false, true, AnimalType.MAMMALS);
     }
 
+    @Override
+    public void makeSound() {
+        System.out.println("La cebra hace: 'Hee-haw!'");
+    }
+
+
 }

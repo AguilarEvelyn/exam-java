@@ -12,5 +12,10 @@ public interface IAnimal {
     int getFeedingFrequency();//frecuencia de alimentación
     boolean requiresSpecialCare(); //requiere cuidados especiales
     boolean canLiveInGroup(); // puede vivir en grupo
+    void makeSound(); // hacer un sonido
+    String
+     showCard(); // mostrar tarjeta de información del animal
+
+
 
 }
