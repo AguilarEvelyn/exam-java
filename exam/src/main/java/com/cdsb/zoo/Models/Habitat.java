@@ -12,10 +12,10 @@ public class Habitat implements IHabitat {
     private int ability; // 0-100 capacidad del hábitat
     private  List<IAnimal> animals;
 
-    public Habitat(HabitatType type, int ability, List<IAnimal> animals) {
+    public Habitat(HabitatType type, int ability) {
         this.type = type;
         this.ability = ability;
-        this.animals = new ArrayList<>(animals);
+        this.animals = new ArrayList<>();
     }
 
 @Override

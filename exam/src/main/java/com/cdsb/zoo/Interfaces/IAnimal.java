@@ -13,8 +13,8 @@ public interface IAnimal {
     boolean requiresSpecialCare(); //requiere cuidados especiales
     boolean canLiveInGroup(); // puede vivir en grupo
     void makeSound(); // hacer un sonido
-    String
-     showCard(); // mostrar tarjeta de información del animal
+    String showCard(); // mostrar tarjeta de información del animal
+    void feed(); // alimentar al animal
 
 
 
