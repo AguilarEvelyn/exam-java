@@ -67,24 +67,30 @@ public abstract class Animal  implements IAnimal{
 
     }
 
-    public String showCard(){
-        return "Tarjeta de información del animal: \n" +
-                "Especie: " + getSpeciesName + "\n" +
+    public String showCard(){ // Método para mostrar la tarjeta de información del animal
+        return"\n====================================\n" +
+                  "Información del Animal:\n" +
+                "====================================\n" +
+
+                "Especie: " + getSpeciesName  +
                 "Espacio necesario: " + necessarySpace + " m2\n" +
                 "Dieta: " + diet + "\n" +
                 "Frecuencia de alimentación: " + feedingFrequency + "\n" +
                 "Requiere cuidados especiales: " + specialCare + "\n" +
                 "Puede vivir en grupo: " + canLiveInGroup + "\n" +
-                "Tipo: " + Type;
+                "Tipo: " + Type + "\n" ;
+
 
     }
 
 
     @Override
     public String toString() {
-        return "Animal [getSpeciesName=" + getSpeciesName + ", necessarySpace=" + necessarySpace + ", diet=" + diet
+        return "=================================\n" +
+                "Animal [getSpeciesName=" + getSpeciesName + ", necessarySpace=" + necessarySpace + ", diet=" + diet
                 + ", feedingFrequency=" + feedingFrequency + ", specialCare=" + specialCare + ", canLiveInGroup="
                 + canLiveInGroup + ", Type=" + Type + "]" + "\n";
+
     }
 
 
