@@ -31,7 +31,7 @@ public class ZooManager implements IZooManager {
 
 
     public void ShowZooStatus() { // Muestra el estado del zoológico, incluyendo los hábitats y los animales en ellos
-        System.out.println("\n Estado actual  del Zoológico:");
+        System.out.println("\n Estado actual  del Zoológico:\n");
         for(Habitat h : habitats){
             System.out.println("--" + h);
             for(IAnimal a : h.getAnimals()){
