@@ -79,6 +79,7 @@ public abstract class Animal  implements IAnimal{
                 "Requiere cuidados especiales: " + specialCare + "\n" +
                 "Puede vivir en grupo: " + canLiveInGroup + "\n" +
                 "Tipo: " + Type + "\n" ;
+                
 
 
     }
